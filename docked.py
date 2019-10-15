@@ -135,7 +135,7 @@ def convert(doc_format=None, style=None, template=None, user_input=None, html_ou
             '--footer-font-size', '9',
             '--footer-font-name', "'Open Sans'",
             '--footer-right','[page]',
-            "<(%s)"%html ,pdf_output
+            f"<({html})" ,pdf_output
             ])
         print('Done')
 
